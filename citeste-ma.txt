@@ -1,0 +1,58 @@
+Primești arhiva cu proiectul (repo-ul, scriptul run_pyntendo.py și fișierul super_mario.nes).
+
+Extrage conținutul arhivei într-un folder accesibil.
+
+Instalarea Visual Studio Code
+
+Descarcă și instalează VS Code: https://code.visualstudio.com/.
+
+Instalează extensia Python din Extensions (Ctrl+Shift+X).
+
+Configurarea Mediului de Lucru
+
+3.1. Crearea unui Mediu Virtual:
+
+python -m venv venv
+
+Activează mediul virtual:
+
+Windows: venv\Scripts\activate
+
+macOS/Linux: source venv/bin/activate
+
+3.2. Instalarea Dependențelor:
+
+pip install numpy pygame pyaudio pyopengl cython
+
+Rularea Proiectului
+
+Deschide folderul proiectului în VS Code.
+
+Selectează interpretul Python din mediu virtual: Ctrl+Shift+P > "Python: Select Interpreter".
+
+Rulează scriptul run_pyntendo.py cu comanda:
+
+python run_pyntendo.py
+
+Controale Implicite
+
+Direcții: W, A, S, D
+
+Select/Start: G, H
+
+A/B: P, L
+
+Rezolvarea Problemelor Comune
+
+ModuleNotFoundError: No module named 'pyximport': Instalează cython cu:
+
+pip install cython
+
+ROM file not found: Verifică dacă fișierul super_mario.nes este în folderul corect.
+
+Note Legale
+
+Fișierul ROM super_mario.nes este inclus doar pentru uz educațional.
+
+Utilizează fișiere ROM doar dacă ai drepturi legale asupra lor.
+
